@@ -91,6 +91,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (cursor                                    (:background gruvbox-light1))
      (mode-line                                 (:background gruvbox-dark3 :foreground gruvbox-light2 :box nil))
      (mode-line-inactive                        (:background gruvbox-dark1 :foreground gruvbox-light4 :box nil))
+     ;; (mode-line-emphasis                        (:foreground gruvbox-bright_red :box nil))
      (fringe                                    (:background gruvbox-bg))
      (hl-line                                   (:background gruvbox-dark1))
      (region                                    (:background gruvbox-dark2)) ;;selection
@@ -107,12 +108,13 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (font-lock-builtin-face                            (:foreground gruvbox-bright_orange))
      (font-lock-constant-face                           (:foreground gruvbox-bright_purple))
      (font-lock-comment-face                            (:foreground gruvbox-dark4))
-     (font-lock-function-name-face                      (:foreground gruvbox-bright_yellow))
-     (font-lock-keyword-face                            (:foreground gruvbox-bright_red))
-     (font-lock-string-face                             (:foreground gruvbox-bright_green))
+     (font-lock-function-name-face                      (:foreground gruvbox-bright_green))
+     (font-lock-keyword-face                            (:foreground gruvbox-bright_red :italic t))
+     (font-lock-string-face                             (:foreground gruvbox-faded_green :italic t))
      (font-lock-variable-name-face                      (:foreground gruvbox-bright_blue))
-     (font-lock-type-face                               (:foreground gruvbox-bright_purple))
+     (font-lock-type-face                               (:foreground gruvbox-bright_yellow))
      (font-lock-warning-face                            (:foreground gruvbox-bright_red :bold t))
+     (font-lock-preprocessor-face                       (:foreground gruvbox-bright_purple :italic t))
 
      ;; Basic faces
      (error                                             (:foreground gruvbox-bright_red :bold t))
@@ -407,6 +409,8 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (org-deadline-announce                     (:foreground gruvbox-faded_red))
      (org-time-grid                             (:foreground gruvbox-faded_orange))
      (org-latex-and-related                     (:foreground gruvbox-bright_blue))
+     (org-code                                  (:foreground gruvbox-bright_yellow))
+     (org-verbatim                              (:foreground gruvbox-faded_aqua))
 
      ;; org-habit
      (org-habit-clear-face                      (:background gruvbox-faded_blue))
@@ -474,7 +478,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (aw-leading-char-face                      (:foreground gruvbox-bright_red :background gruvbox-bg :height 4.0))
 
      ;; show-paren
-     (show-paren-match                          (:background gruvbox-dark3 :foreground gruvbox-bright_blue  :weight 'bold))
+     (show-paren-match                          (:foreground gruvbox-bright_blue :weight 'bold))
      (show-paren-mismatch                       (:background gruvbox-bright_red :foreground gruvbox-dark3 :weight 'bold))
 
      ;; ivy
@@ -608,6 +612,19 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (lsp-ui-sideline-code-action               (:foreground gruvbox-bright_yellow))
      (lsp-ui-sideline-current-symbol            (:foreground gruvbox-faded_aqua))
      (lsp-ui-sideline-symbol                    (:foreground gruvbox-gray))
+
+     (lsp-face-semhl-macro                      (:foreground gruvbox-bright_aqua :italic t))
+     (lsp-face-semhl-namespace                  (:foreground gruvbox-bright_purple))
+     (lsp-face-semhl-property                   (:foreground gruvbox-bright_aqua))
+
+     ;; doom-modeline
+     (doom-modeline-bar                         (:background gruvbox-faded_blue))
+     (doom-modeline-buffer-file                 (:foreground gruvbox-bright_orange))
+     (doom-modeline-buffer-major-mode           (:foreground gruvbox-bright_orange))
+     (doom-modeline-buffer-minor-mode           (:foreground gruvbox-bright_yellow))
+
+     ;; highlight quoted
+     (highlight-quoted-quote                    (:foreground gruvbox-bright_red))
 
      ;; mu4e
      (mu4e-header-key-face                      (:foreground gruvbox-bright_green :weight 'bold ))
