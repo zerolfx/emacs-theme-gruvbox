@@ -96,7 +96,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (hl-line                                   (:background gruvbox-dark1))
      (region                                    (:background gruvbox-dark2)) ;;selection
      (secondary-selection                       (:background gruvbox-dark1))
-     (minibuffer-prompt                         (:background gruvbox-bg :foreground gruvbox-bright_green :bold t))
+     (minibuffer-prompt                         (:foreground gruvbox-bright_green :bold t))
      (vertical-border                           (:foreground gruvbox-dark2))
      (internal-border                           (:background gruvbox-dark2))
      (window-divider                            (:foreground gruvbox-dark2))
@@ -335,7 +335,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
      ;; marginalia
      (marginalia-documentation                  (:italic t :foreground gruvbox-light3))
-     
+
      ;; corfu
      (corfu-background                          (:background gruvbox-dark1))
      (corfu-current                             (:foreground gruvbox-bright_purple :background gruvbox-dark2))
@@ -869,6 +869,19 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
      ;; ledger-mode
      (ledger-font-xact-highlight-face  (:background gruvbox-dark1))
+
+     ;; Solaire
+     (solaire-default-face        (:background gruvbox-dark0_soft))
+     (solaire-minibuffer-face     (:background gruvbox-dark0_soft))
+     (solaire-hl-line-face        (:background gruvbox-dark0_soft))
+     (solaire-org-hide-face       (:background gruvbox-dark0_soft))
+
+     ;; avy
+     (avy-background-face         (:foreground gruvbox-gray))
+     (avy-lead-face               (:foreground gruvbox-light1 :background gruvbox-neutral_red))
+     (avy-lead-face-0             (:foreground gruvbox-light1 :background gruvbox-neutral_blue))
+     (avy-lead-face-1             (:foreground gruvbox-light1 :background gruvbox-neutral_aqua))
+     (avy-lead-face-2             (:foreground gruvbox-light1 :background gruvbox-neutral_purple))
 
      ),@body))
 
